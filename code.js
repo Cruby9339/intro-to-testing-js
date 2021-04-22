@@ -1,8 +1,16 @@
 // helloWorld function 
-function helloWorld() {
-    return "Hello, World!";
+
+// function helloWorld(){
+//     return "Hello, world!";
+// }
+
+
+
+
+
+
+
+function sayHello(name) {
+    return "Hello, " + name + "!";
 }
 
-function notHelloWorld(){
-    return "Let's hope this works";
-}
