@@ -32,7 +32,25 @@ describe('sayHello', function() {
     it('should return the string "Hello Pat!" when executed', function () {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     });
-    it('should ', function () {
+    it('should return the string "Hello, World!" when executed', function () {
+        expect(sayHello(true)).toBe("Hello, World!");
+    });
+    it('should return the string "Hello, World!" when executed', function () {
+        expect(sayHello(false)).toBe("Hello, World!");
+    });
+});
+
+
+describe('isFive', function () {
+    it('Should be a declared function', function () {
+        expect(typeof isFive).toBe("function")
+        });
+    it('Should return "true" if the argument passed was 5', function () {
+        expect(isFive(5)).toBe(true)
+        });
+    it('should return "false" if the argument passed was the string "5"', function () {
+        expect(isFive("5")).toBe(false)
         
     });
+
 });
