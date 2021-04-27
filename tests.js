@@ -50,9 +50,7 @@ describe('isFive', function () {
         });
     it('should return "false" if the argument passed was the string "5"', function () {
         expect(isFive("5")).toBe(false)
-        
     });
-
 });
 
 
@@ -110,3 +108,31 @@ describe('isVowel', function(){
         expect(isVowel()).toBe(false)
     });
 });
+
+describe('add', function (){
+    it('should be a declared function', function () {
+        expect(typeof add).toBe("function")
+    });
+    it('should return 5 if the arguments passed were 2 and 3', function () {
+        expect(add(2,3)).toBe(5)
+    });
+    it('should return -12 if the arguments passed were -3 and -9', function () {
+        expect(add(-3,-9)).toBe(-12)
+    });
+    it('should return 11 if the arguments passed were "5" and 6', function () {
+        expect(add("5", 6)).toBe(11)
+    });
+    it('should return 6 if the arguments passed were "-4" and "10', function () {
+        expect(add("-4","10")).toBe(6)
+    });
+    it('should return NaN if the arguments passed were "banana" and "split"', function () {
+        expect(add("banana", "split")).toBeNaN(NaN)
+    });
+    it('should return NaN if the arguments passed were 2 and "apples"', function () {
+        expect(add(2,"apples")).toBeNaN(NaN)
+    });
+    it('should return NaN if no argument was passed', function () {
+        expect(add()).toBeNaN()
+    });
+});
+

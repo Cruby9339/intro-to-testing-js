@@ -38,4 +38,8 @@ function isVowel(input) {
     return input === ("a" || "e" || "i" || "o" || "u");
 }
 
+function add(num1,num2){
+    return parseInt(num1) + parseInt(num2);
+}
 
+console.log(add("banana", "split"))
